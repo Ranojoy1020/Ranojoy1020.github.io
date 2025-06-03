@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <title>Portfolio</title>
+  </head>
+
+  <body>
+    <nav>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact Me</a>
+      </div>
+    </nav>
+
+    <!-- id "#about" is given for navigating/ linking sections not for CSS -->
+    <section class="landing" id="about">
+      <canvas id="myCanvas"></canvas>
+      <div class="intro">
+        <p>Hello, I'm Ranojoy Banerjee.</p>
+        <p>
+          Passionate Full-Stack Developer and MCA student.
+        </p>
+        <div class="social">
+          <!-- <a href="https://twitter.com/Rikki1020" target="_blank">
+            <img src="Twitter-icon.svg" alt="" />
+          </a> -->
+
+          <a
+            href="https://www.linkedin.com/in/ranojoy-banerjee-894514346/"
+            target="_blank"
+          >
+            Connect with me<img
+              src="static/linkedin_logo.png"
+              alt="linkedin_logo"
+            />
+          </a>
+
+          <a href="https://github.com/Ranojoy1020" target="_blank">
+            My Projects<img src="static/github_logo.png" alt="github_logo" />
+          </a>
+
+          <a href="/static/Ranojoy_Resume.pdf" download class="resume-btn">
+            Resume<img src="static/download_icon.png" alt="download_icon" />
+          </a>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <h1 class="project-header">Projects</h1>
+      <div class="project-container">
+        <div class="card">
+          <img
+            src="/static/project_img/voting_system.png"
+            alt="College Voting System"
+          />
+          <div class="content">
+            <h2>College Voting System</h2>
+            <p class="date">Sep 2023 - Dec 2023</p>
+            <p class="desc">
+              System aiming to simplify the student counsel voting within a
+              college.
+            </p>
+            <p class="tech"><strong>Technologies:</strong> Java, JSP, MySQL</p>
+          </div>
+        </div>
+
+        <!-- Project Card 2 -->
+        <div class="card">
+          <img
+            src="/static/project_img/donation_system.png"
+            alt="Helping Hands"
+          />
+          <div class="content">
+            <h2>Helping Hands - Donation System</h2>
+            <p class="date">Sep 2024 - Dec 2024</p>
+            <p class="desc">
+              A platform for donors and NGOs for easier donation process.
+            </p>
+            <p class="tech">
+              <strong>Technologies:</strong> React Native, ExpressJS, MongoDB
+            </p>
+          </div>
+        </div>
+
+        <!-- Project Card 3 -->
+        <!-- <div class="card">
+      <img src="https://via.placeholder.com/300x150" alt="ReactJS Weather App">
+      <div class="content">
+        <h2>ReactJS Weather Application</h2>
+        <p class="date">Aug 2024 - Sep 2024</p>
+        <p class="desc">A basic React app using Web API to fetch and display weather data.</p>
+        <p class="tech"><strong>Technologies:</strong> ReactJS, OpenWeatherMap API</p>
+      </div>
+    </div> -->
+
+        <!-- Project Card 4 -->
+        <div class="card">
+          <img
+            src="/static/project_img/sort_visualizer.png"
+            alt="Sorting Visualizer"
+          />
+          <div class="content">
+            <h2>Sorting Visualizer</h2>
+            <p class="date">Feb 2025</p>
+            <p class="desc">
+              Interactive web app to visualize and learn sorting algorithms.
+            </p>
+            <p class="tech"><strong>Technologies:</strong> HTML, CSS, JS</p>
+            <a href="https://visualizethesort.netlify.app" target="_blank"
+              >Visit Project</a
+            >
+          </div>
+        </div>
+
+        <!-- Project Card 5 -->
+        <div class="card">
+          <img src="/static//project_img/retailease.png" alt="RetailEase" />
+          <div class="content">
+            <h2>RetailEase - Store Mgmt. System</h2>
+            <p class="date">Feb 2025 - May 2025</p>
+            <p class="desc">
+              Web app for managing inventory, sales, transactions, and
+              analytics.
+            </p>
+            <p class="tech">
+              <strong>Technologies:</strong> Java SpringBoot, ReactJS,
+              PostgreSQL, Docker
+            </p>
+            <a href="https://platinummarket.netlify.app" target="_blank"
+              >Visit Project</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="contact-container">
+        <div class="contact-info-container">
+          <h1 class="contact-header">Get In Touch</h1>
+          <p class="contact-description">
+            If you have any questions or just want to say hi, feel free to drop
+            me a message!
+          </p>
+          <ul class="contact-info">
+            <li>
+              <img src="/static/phone_logo.png" alt="phone_logo" />
+              (+91) 98310 20102
+            </li>
+          </ul>
+        </div>
+        <form
+          action="https://formspree.io/f/xeokqebg"
+          method="POST"
+          class="contact-form"
+        >
+          <h1 class="form-header">Send a message</h1>
+          <input type="text" name="name" placeholder="Your name" required />
+          <input
+            type="email"
+            name="_replyto"
+            placeholder="Your email"
+            required
+          />
+          <textarea
+            name="message"
+            placeholder="Your message"
+            required
+          ></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+<!-- * <a href="https://www.freepik.com/free-photos-vectors/background" >Background vector created by freepik - www.freepik.com</a> -->
