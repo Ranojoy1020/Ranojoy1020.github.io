@@ -44,7 +44,7 @@ nav {
 .nav-links {
   width: 30%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .nav-links a:hover,
 .nav-links a:focus {
@@ -152,7 +152,6 @@ nav {
 }
 
 .project-container {
-
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   grid-gap: 2rem;
@@ -218,7 +217,6 @@ nav {
   width: 20vw;
   background-color: var(--secondary-color);
   border-radius: 1rem;
-  /* margin: 5vh; */
   box-shadow: rgb(175, 175, 175) 0 0.5rem 0.5rem 0,
     rgb(156, 156, 156) 0 1.5rem 2rem 0.1rem;
   transition: all 100ms ease-out;
@@ -233,7 +231,6 @@ nav {
 .contact-container {
   height: 70vh;
   width: 60vw;
-  padding-left: 5vw;
   background-color: #526d8277;
   border-radius: 1rem;
   backdrop-filter: blur(1px);
@@ -244,7 +241,7 @@ nav {
 
 .contact-info-container {
   width: 30vw;
-  position: relative;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -253,12 +250,10 @@ nav {
 
 .contact-header{
   width: 100%;
-  height: 10vh;
+  height: auto;
   font-size: 2rem;
   font-weight: bold;
   color: var(--primary-color);
-  position: absolute;
-  top: 2rem;
 }
 
 .contact-description {
@@ -266,17 +261,12 @@ nav {
   height: 10vh;
   font-size: 1.2rem;
   color: var(--quaternary-color);
-  margin-bottom: 2rem;
-  position: absolute;
-  top: 5rem;
 }
 
 .contact-info{
   width: 100%;
-  height: 5vh;
   font-size: 1rem;
   color: var(--quaternary-color);
-  margin-bottom: 1rem;
   display: flex;
   flex-direction: column;
 }
@@ -361,5 +351,75 @@ nav {
   }
   100% {
     transform: translateY(0);
+  }
+}
+
+
+@media (max-width : 500px) {
+
+  *{
+    font-size: 0.8rem;
+  }
+
+  .nav-links{
+    width: 100%;
+  }
+
+  .intro{
+    min-width: 80vw;
+    text-align: center;
+  }
+
+  .social{
+    min-width: 40vw;
+  }
+
+  #projects{
+    height: auto;
+  }
+
+  .project-header{
+    padding-top: 5vh;
+    font-size: 1.5rem;
+  }
+
+  .project-container{
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+    height: auto;
+    place-items: center;
+  }
+
+  .project-container > .card{
+    min-width: 70vw;
+    height: 90%;
+  }
+  
+  #contact{
+    width: 100%;
+  }
+
+  .contact-container{
+    width: 80vw;
+    flex-direction: column;
+  }
+
+  .contact-info-container{
+    padding: 1rem;
+    width: 100%;
+    height: auto;
+  }
+
+  .contact-header{
+    text-align: center;
+    width: 100%;
+  }
+
+  
+
+  .contact-form{
+    width: 100%;
+    height: 40vh;
+    padding: 2rem;
   }
 }
