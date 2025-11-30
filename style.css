@@ -237,8 +237,15 @@ nav {
   border-radius: 50%;
 }
 
+.course:hover{
+  transform: scale(1.005);
+  box-shadow: var(--tertiary-color) inset 0 0 1rem 0.05rem,
+    var(--quaternary-color) 0 0 2rem 0.1rem;
+}
+
 .course-link{
   transform: rotate(90deg);
+  border-color: var(--tertiary-color);
   z-index: -1;
 }
 
